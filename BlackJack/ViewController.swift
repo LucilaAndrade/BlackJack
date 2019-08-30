@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var deck : Baraja=Baraja.init()
+        deck.barajar()
+        
+        print(deck.sacarCarta().cardLabel)
     }
 
 

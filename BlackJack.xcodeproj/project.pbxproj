@@ -12,6 +12,11 @@
 		ED5D247A23183C7B0039FF7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5D247823183C7B0039FF7B /* Main.storyboard */; };
 		ED5D247C23183C7F0039FF7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5D247B23183C7F0039FF7B /* Assets.xcassets */; };
 		ED5D247F23183C7F0039FF7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5D247D23183C7F0039FF7B /* LaunchScreen.storyboard */; };
+		ED5D24882318417C0039FF7B /* A-trebol.png in Resources */ = {isa = PBXBuildFile; fileRef = ED5D24862318417C0039FF7B /* A-trebol.png */; };
+		ED5D248A231842DD0039FF7B /* Carta.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5D2489231842DD0039FF7B /* Carta.swift */; };
+		EDB739F823186AA000D4D50D /* Baraja.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB739F723186AA000D4D50D /* Baraja.swift */; };
+		EDB739FA2318820500D4D50D /* Mano.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB739F92318820500D4D50D /* Mano.swift */; };
+		EDB739FC2318887100D4D50D /* Jugador.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB739FB2318887100D4D50D /* Jugador.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		ED5D247B23183C7F0039FF7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED5D247E23183C7F0039FF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED5D248023183C7F0039FF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5D24872318417C0039FF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "Base.lproj/A-trebol.png"; sourceTree = "<group>"; };
+		ED5D2489231842DD0039FF7B /* Carta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carta.swift; sourceTree = "<group>"; };
+		EDB739F723186AA000D4D50D /* Baraja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baraja.swift; sourceTree = "<group>"; };
+		EDB739F92318820500D4D50D /* Mano.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mano.swift; sourceTree = "<group>"; };
+		EDB739FB2318887100D4D50D /* Jugador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jugador.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +64,17 @@
 		ED5D247323183C7B0039FF7B /* BlackJack */ = {
 			isa = PBXGroup;
 			children = (
+				ED5D24862318417C0039FF7B /* A-trebol.png */,
 				ED5D247423183C7B0039FF7B /* AppDelegate.swift */,
 				ED5D247623183C7B0039FF7B /* ViewController.swift */,
 				ED5D247823183C7B0039FF7B /* Main.storyboard */,
 				ED5D247B23183C7F0039FF7B /* Assets.xcassets */,
 				ED5D247D23183C7F0039FF7B /* LaunchScreen.storyboard */,
 				ED5D248023183C7F0039FF7B /* Info.plist */,
+				ED5D2489231842DD0039FF7B /* Carta.swift */,
+				EDB739F723186AA000D4D50D /* Baraja.swift */,
+				EDB739F92318820500D4D50D /* Mano.swift */,
+				EDB739FB2318887100D4D50D /* Jugador.swift */,
 			);
 			path = BlackJack;
 			sourceTree = "<group>";
@@ -123,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED5D247F23183C7F0039FF7B /* LaunchScreen.storyboard in Resources */,
+				ED5D24882318417C0039FF7B /* A-trebol.png in Resources */,
 				ED5D247C23183C7F0039FF7B /* Assets.xcassets in Resources */,
 				ED5D247A23183C7B0039FF7B /* Main.storyboard in Resources */,
 			);
@@ -135,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB739FC2318887100D4D50D /* Jugador.swift in Sources */,
+				EDB739F823186AA000D4D50D /* Baraja.swift in Sources */,
 				ED5D247723183C7B0039FF7B /* ViewController.swift in Sources */,
+				ED5D248A231842DD0039FF7B /* Carta.swift in Sources */,
 				ED5D247523183C7B0039FF7B /* AppDelegate.swift in Sources */,
+				EDB739FA2318820500D4D50D /* Mano.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +177,14 @@
 				ED5D247E23183C7F0039FF7B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ED5D24862318417C0039FF7B /* A-trebol.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED5D24872318417C0039FF7B /* Base */,
+			);
+			name = "A-trebol.png";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -285,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CVB88FX378;
 				INFOPLIST_FILE = BlackJack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CVB88FX378;
 				INFOPLIST_FILE = BlackJack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
